@@ -1,0 +1,27 @@
+{
+  "name": "sql-reader01",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@i2analyze/i2connect-scripts": "^1.0.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.18.12",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "build": "i2connect-scripts build",
+    "serve": "node dist/index.js",
+    "start": "i2connect-scripts start",
+    "i2connect": "i2connect-scripts"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "volta": {
+    "node": "14.15.4"
+  },
+  "dependencies": {
+    "@i2analyze/i2connect": "^1.2.2",
+    "mssql": "^8.1.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "queryUrlRoot1": "https://api.what3words.com/v3/convert-to-3wa?language=en&key=",
+    "queryUrlRoot2": "https://api.what3words.com/v3/convert-to-coordinates?key="
+}

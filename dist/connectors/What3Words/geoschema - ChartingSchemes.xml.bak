@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartingSchemeList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.i2group.com/Schemas/2012-05-29/ModelData/v2">
+  <ChartingSchemes xmlns="">
+    <ChartingScheme Name="Charting Scheme 1">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings>
+          <ItemType Id="ET1">
+            <PropertyMappings>
+              <PropertyMapping Property="Label">
+                <ResolvableValue Suffix="&#xD;&#xA;">
+                  <ApolloProperty Id="PT1">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+                <ResolvableValue Suffix="&#xD;&#xA;">
+                  <ApolloProperty Id="PT6">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+                <ResolvableValue>
+                  <ApolloProperty Id="PT5">
+                    <Aggregation />
+                  </ApolloProperty>
+                </ResolvableValue>
+              </PropertyMapping>
+            </PropertyMappings>
+            <AttributeMappings />
+          </ItemType>
+        </EntityMappings>
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+    <ChartingScheme Name="Charting Scheme 2">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings />
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+    <ChartingScheme Name="Charting Scheme 3">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings />
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+    <ChartingScheme Name="Charting Scheme 4">
+      <XmlChartingScheme>
+        <ChartItemAttributes />
+        <ChartItemDataRecordProperties />
+        <EntityMappings />
+        <LinkMappings />
+      </XmlChartingScheme>
+    </ChartingScheme>
+  </ChartingSchemes>
+</ChartingSchemeList>

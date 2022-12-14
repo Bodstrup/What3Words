@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns2:Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.i2group.com/Schemas/2011-03-03/ModelSchemaExtension" DefaultLabelingSchemeId="LS1" xmlns:ns2="http://www.i2group.com/Schemas/2011-03-03/ModelSchema">
+  <GradeTypes>
+    <GradeType Id="G1" Name="Reliability" Description="Source Evaluation" Mandatory="false">
+      <Values>
+        <Value>A</Value>
+        <Value>B</Value>
+        <Value>C</Value>
+        <Value>D</Value>
+        <Value>E</Value>
+      </Values>
+    </GradeType>
+    <GradeType Id="G2" Name="Confidence" Description="Information Intelligence Evaluation" Mandatory="false">
+      <Values>
+        <Value>1</Value>
+        <Value>2</Value>
+        <Value>3</Value>
+        <Value>4</Value>
+        <Value>5</Value>
+      </Values>
+    </GradeType>
+    <GradeType Id="G3" Name="Privacy" Description="Handling Code" Mandatory="false">
+      <Values>
+        <Value>1</Value>
+        <Value>2</Value>
+        <Value>3</Value>
+        <Value>4</Value>
+        <Value>5</Value>
+      </Values>
+    </GradeType>
+  </GradeTypes>
+  <ItemTypes>
+    <EntityTypes>
+      <EntityType Description="An Analyst's Notebook chart" DisplayName="Analyst's Notebook Chart" Id="CHART" Icon="Anbchart">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="The name of the chart, which is independent from its file name" DisplayName="Name" Id="CHART1" LogicalType="SINGLE_LINE_STRING" Mandatory="true" Position="0" SemanticTypeId="" MaximumLengthChars="255">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="A description of the chart" DisplayName="Description" Id="CHART2" LogicalType="MULTIPLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+      <EntityType DisplayName="Location" Id="ET1" Icon="Place">
+        <PropertyGroupTypes />
+        <PropertyTypes>
+          <PropertyType Description="" DisplayName="Location_Name" Id="PT1" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="0" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Description" Id="PT6" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="1" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Latitude" Id="PT3" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="2" SemanticTypeId="guid5304A03B-FE47-4406-91E7-0D49EC8409A6" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Longitude" Id="PT4" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="3" SemanticTypeId="guid14BCA0EC-D67A-4A67-BC36-CFF650FD77A9" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="MGRS" Id="PT5" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="4" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="What3Words" Id="PT7" LogicalType="SINGLE_LINE_STRING" Mandatory="false" Position="5" SemanticTypeId="" MaximumLengthChars="250">
+            <PossibleValues />
+          </PropertyType>
+          <PropertyType Description="" DisplayName="Comments" Id="PT2" LogicalType="MULTIPLE_LINE_STRING" Mandatory="false" Position="6" SemanticTypeId="">
+            <PossibleValues />
+          </PropertyType>
+        </PropertyTypes>
+      </EntityType>
+    </EntityTypes>
+    <LinkTypes />
+  </ItemTypes>
+  <Id>05942c84-92d3-44f6-9487-c46c38d0c3e8</Id>
+  <Version>4</Version>
+  <SourceInfoMandatoryFields IsDateMandatory="false" IsDescriptionMandatory="false" IsReferenceMandatory="false" IsTypeMandatory="false" />
+  <LinkStrengthInfo DefaultLinkStrengthId="f232caa8-cf55-4d9a-8c21-19a55b0447da">
+    <LinkStrengths>
+      <LinkStrength Id="f232caa8-cf55-4d9a-8c21-19a55b0447da" Name="Confirmed" LineStyle="SOLID" />
+      <LinkStrength Id="59f66ee2-0abe-4036-a11d-07ed4175720e" Name="Unconfirmed" LineStyle="DASHED" />
+      <LinkStrength Id="f0d2ff1c-28cb-4afe-8cbb-89e198c910a3" Name="Tentative" LineStyle="DOTTED" />
+    </LinkStrengths>
+  </LinkStrengthInfo>
+  <LabelingSchemes>
+    <LabelingScheme Id="LS1" Name="Labeling Scheme 1">
+      <LabelDefinitions>
+        <LabelDefinition ItemTypeId="CHART">
+          <LabelParts />
+        </LabelDefinition>
+        <LabelDefinition ItemTypeId="ET1">
+          <LabelParts>
+            <LabelPart Value="PT1" LabelPartType="PROPERTY_TYPE" />
+          </LabelParts>
+        </LabelDefinition>
+      </LabelDefinitions>
+    </LabelingScheme>
+  </LabelingSchemes>
+  <SemanticTypeLibrary>
+    <lcx:LibraryCatalogue VersionMajor="1" VersionMinor="18" VersionRelease="27" VersionBuild="60" xmlns:lcx="http://www.i2group.com/Schemas/2001-12-07/LCXSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LocaleHex="0409" />
+  </SemanticTypeLibrary>
+</ns2:Schema>
