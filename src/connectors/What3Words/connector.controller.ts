@@ -244,7 +244,7 @@ export class What3Words
   @service
   (
     {
-      name: 'Enrich Location Entity',
+      name: 'Enrich Seeded Location Entity',
     }
   )
   public async searchWords
@@ -274,7 +274,7 @@ export class What3Words
         {
           latitude  = <number>seed.getProperty('Latitude');
           longitude = <number>seed.getProperty('Longitude');
-          
+
           console.log("lat/long", latitude, longitude);
 
         }
