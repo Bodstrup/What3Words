@@ -339,7 +339,7 @@ export class What3Words
   @service
   (
     {
-      name: 'Lat/Long from What3Words',
+      name: 'Lat/Long from What3Words Parameter',
     }
   )
 
